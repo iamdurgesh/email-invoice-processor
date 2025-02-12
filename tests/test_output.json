@@ -1,0 +1,38 @@
+[
+    {
+        "sender": "billing@linode.com",
+        "invoice_number": "23989951",
+        "total_amount": null,
+        "due_date": null
+    },
+    {
+        "sender": "billing@linode.com",
+        "invoice_number": "24201264",
+        "total_amount": null,
+        "due_date": null
+    },
+    {
+        "sender": "DURGESH AGGARWAL <adurgesh.de@gmail.com>",
+        "invoice_number": "1023",
+        "total_amount": "175.00",
+        "due_date": "03/15/2025"
+    },
+    {
+        "sender": "DURGESH AGGARWAL <adurgesh.de@gmail.com>",
+        "invoice_number": "INV-9999",
+        "total_amount": "325.50",
+        "due_date": "12-01-2025"
+    },
+    {
+        "sender": "DURGESH AGGARWAL <adurgesh.de@gmail.com>",
+        "invoice_number": "009",
+        "total_amount": "1,540.00",
+        "due_date": null
+    },
+    {
+        "sender": "SUNITHA AGGARWAL <shoppingmartexports@gmail.com>",
+        "invoice_number": "AB-2233",
+        "total_amount": "797.50",
+        "due_date": "2025-04-10"
+    }
+]
