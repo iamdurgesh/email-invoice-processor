@@ -1,0 +1,29 @@
+<!-- templates/edit.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Invoice</title>
+</head>
+<body>
+    <h1>Edit Invoice</h1>
+    <form method="post">
+        <label>Sender:</label><br>
+        <input type="text" name="sender" value="{{ invoice.sender }}"><br><br>
+        
+        <label>Invoice Number:</label><br>
+        <input type="text" name="invoice_number" value="{{ invoice.invoice_number }}"><br><br>
+        
+        <label>Total Amount:</label><br>
+        <input type="text" name="total_amount" value="{{ invoice.total_amount }}"><br><br>
+        
+        <label>Due Date:</label><br>
+        <input type="text" name="due_date" value="{{ invoice.due_date }}"><br><br>
+        
+        <input type="submit" value="Update Invoice">
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}">Back to Dashboard</a>
+</body>
+</html>

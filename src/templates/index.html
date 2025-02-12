@@ -1,0 +1,37 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice Dashboard</title>
+</head>
+<body>
+    <h1>Invoice Dashboard</h1>
+    <div id="invoice-data"></div>
+
+    <script>
+        const invoices = JSON.parse('{{ invoices | safe }}');
+
+        const container = document.getElementById('invoice-data');
+        if (invoices.length === 0) {
+            container.innerHTML = "<p>No invoices found.</p>";
+        } else {
+            invoices.forEach(inv => {
+                const div = document.createElement('div');
+                div.style.border = "1px solid #ccc";
+                div.style.padding = "10px";
+                div.style.margin = "10px";
+                div.innerHTML = `
+                    <p><strong>Sender:</strong> ${inv.sender}</p>
+                    <p><strong>Invoice Number:</strong> ${inv.invoice_number}</p>
+                    <p><strong>Total Amount:</strong> ${inv.total_amount || "N/A"}</p>
+                    <p><strong>Due Date:</strong> ${inv.due_date || "N/A"}</p>
+                    <p><a href="/edit/${inv._id.$oid}">Edit Invoice</a></p>
+                `;
+                container.appendChild(div);
+            });
+        }
+    </script>
+</body>
+</html>
