@@ -15,27 +15,27 @@ Bei diesem Projekt handelt es sich um ein automatisiertes Tool zur Erkennung von
   - UI zur manuellen Überprüfung oder Korrektur der extrahierten Daten.
 
 
-## Setup and Installation
+## Einrichtung und Installation
 
-1. **Clone the Repository:**
+1. **Klone das Repository:**
 
    ```bash
    git clone https://github.com/iamdurgesh/email-invoice-processor.git
    cd email-invoice-processor
 
-## Create a Virtual Environment and Activate It:
+## Erstellung einer virtuellen Umgebung und deren Aktivierung:
 python -m venv aivenv
 source aivenv/bin/activate   # On Windows: aivenv\Scripts\activate
 
-## Install Dependencies:
+## Abhängigkeiten installieren:
 pip install -r requirements.txt
-Note: Ensure that you have Tesseract OCR installed on your system (and poppler for PDF conversion).
-brew install tesseract poppler (*For macOS*)
+Hinweis: Stellen Sie sicher, dass Sie Tesseract OCR auf Ihrem System installiert haben (und poppler für die PDF-Konvertierung).
+brew install tesseract poppler (*Für macOS*)
 
 ## Setup MongoDB:
 
-Install and start MongoDB locally (or use MongoDB Atlas).
-For local installation on macOS, you can use Homebrew:
+Installieren und starten Sie MongoDB lokal (oder verwenden Sie MongoDB Atlas).
+Für die lokale Installation unter macOS können Sie Homebrew verwenden:
 
 brew tap mongodb/brew
 brew install mongodb-community@6.0
