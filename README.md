@@ -120,10 +120,10 @@ templates/index.html → Web-UI für die Darstellung der Rechnungsdaten
 
 
 
-### 5. Bonus Features (Optional)
+### 5. Features 
 
 - **Erkennung von wiederkehrenden Rechnungen:** Das System prüft auf doppelte Rechnungsnummern, um zu vermeiden, dass dieselbe Rechnung mehrfach bearbeitet wird. (in der db.py: Es wurde eine Datenbank-Speicherfunktion zur Überprüfung auf Duplikate hinzugefügt. Jedes Mal, wenn eine Rechnung verarbeitet wird, prüft das System vor dem Speichern, ob es sich um ein Duplikat handelt).
 
 
-Add Email Classification (Optional):
+Add Email Classification 
 Instead of searching for "Invoice" in the subject line, you can train or fine-tune a text classification model (e.g., a small BERT or DistilBERT) to determine whether an email is likely an invoice. This would reduce reliance on a strict keyword match.
