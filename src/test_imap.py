@@ -1,4 +1,3 @@
-# test_imap.py
 from src.email_processor import connect_to_mailbox, search_invoices, fetch_email
 
 def test_imap_connection():
